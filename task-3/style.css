@@ -1,0 +1,38 @@
+.universalButton{
+	display:inline-block;
+	margin: 3px;
+	text-align: center;
+
+	border-top: 	1px solid #e5e5e5;
+	border-right: 	1px solid #c6c6c6;
+	border-bottom:  1px solid #a8a8a8;
+	border-left: 	1px solid #c6c6c6;	
+	border-radius:0.7em;
+	
+	background-color: #eaeaea;
+	outline: none;/*для FF*/
+	box-shadow: 0.2em  0 0.3em 0.2em #f0f0f0 inset;
+	text-decoration: none;/*для ссылок*/
+	
+	color:#303030;
+	font: 16px arial, sans-serif;
+	font-weight: bold;
+	padding:0.6em 2em;
+	cursor:pointer;
+	transition: 0.1s;	
+}
+.universalButton:hover{
+	background-color: #efefef;
+}
+.universalButton:active{
+	background-color: #e9e9e9;
+	box-shadow:  0.2em 0 0.3em 0.1em #dddddd inset,
+				-0.2em 0 0.3em 0.1em #dddddd inset;
+}
+.universalButton::-moz-focus-inner{padding:0;border:0}/*чтобы в FF кнопки были нужного размера*/
+.universalButton-small{font-size: 50%;}
+.universalButton-normal{font-size: 100%;}
+.universalButton-big{font-size: 150%;}
+
+
+
