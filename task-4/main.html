@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css"></link>
+</head>
+<body onload="fillList()">
+<div class="pagewrapper">
+	<nav class="navigation">
+		<a href="#" class="navigation-link nl-purple">Личный кабинет</a>
+		<a href="#" class="navigation-link nl-green">Раздел 1</a>
+		<a href="#" class="navigation-link nl-blue">Раздел 2</a>
+		<a href="#" class="navigation-link nl-orange">Раздел 3</a>
+		<a href="#" class="navigation-link nl-grey">Раздел 4</a>
+		<a href="#" class="navigation-link nl-brown">Раздел 5</a>
+	</nav>
+	<section class="leftcolumn">
+		<p>
+		&#9728;TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.
+		</p>
+		<p>
+		Наша цель проста - делать наших клиентов счастливыми, а их путешествия незабываемыми. <br>
+		Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц. <br>
+		А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собственному контакт-центру.
+		</p>
+	</section>
+	<section class="content">
+		<h1>Заполните форму</h1>
+		<ul class="indicator">
+			<li class="indicator-item ii-Prev opera-first">1
+			<li class="indicator-item ii-Prev">2
+			<li class="indicator-item ii-Curr">3
+			<li class="indicator-item ii-Next">4
+			<li class="indicator-item ii-Next opera-last">5
+		</ul>
+		<form action="main.html" name="commonInfo" method="post">
+			<fieldset class="form-field">
+				<legend>Общая информация</legend>
+				<div class="form-item">
+					<span class="form-item-caption">Фамилия</span><br>
+					<input type="text" name="surname">
+				</div>
+				<div class="form-item">
+					<span class="form-item-caption">Имя</span><br>
+					<input type="text" name="name">
+				</div>
+				<div class="form-item">
+					<span class="form-item-caption">Отчество</span><br>
+					<input type="text" name="patronymic">
+				</div>
+				<div class="form-item">
+					<span class="form-item-caption">Меняли фамилию?</span><br>
+					<input type="radio" id="surname-ch-yes" name="surname-ch" value="yes">		 <label for="surname-ch-yes">Да</label>
+					<input type="radio" id="surname-ch-no"  name="surname-ch" value="no" checked><label for="surname-ch-no" >Нет</label>
+				</div>
+				<div class="form-item">
+					<span class="form-item-caption">Пол</span><br>
+					<input type="radio" id="sex-m" name="sex" value="male" checked ><label for="sex-m">Муж</label>
+					<input type="radio" id="sex-f" name="sex" value="female">		<label for="sex-f">Жен</label>
+				</div>
+				<div class="form-item">
+					<span class="form-item-caption">Семейное положение</span><br>
+					<select name="marital_status">
+						<option value="notmarried">Холост / Не замужем</option>
+						<option value="married">Женат / Замужем</option>
+					</select> 
+				</div>
+				<div class="form-item">
+					<span class="form-item-caption">Гражданство</span><br>
+					<select name="nationality">
+						<option value="RUS">Российская Федерация</option>
+						<option value="BEL">Беларусь</option>
+						<option value="UKR">Украина</option>
+						<option value="AZE">Азербайджан</option>
+						<option value="ARM">Армения</option>
+						<option value="KAZ">Казахстан</option>						
+						<option value="KIR">Киргизия</option>
+						<option value="MOL">Молдавия</option>
+						<option value="TAJ">Таджикистан</option>
+						<option value="TUR">Туркменистан</option>
+						<option value="UZB">Узбекистан</option>
+					</select>
+				</div>
+				<div class="form-item">
+					<span class="form-item-caption">Дата рождения</span><br>
+					<select name="dayOfBirth">
+					</select>
+					<select name="monthOfBirth">
+						<option value="	jan	">	января	</option>
+						<option value="	feb	">	февраля	</option>
+						<option value="	mar	">	марта	</option>
+						<option value="	apr	">	апреля	</option>
+						<option value="	may	">	мая	</option>
+						<option value="	jun	">	июня	</option>
+						<option value="	jul	">	июля	</option>
+						<option value="	aug	">	августа	</option>
+						<option value="	sep	">	сентября	</option>
+						<option value="	oct	">	октября	</option>
+						<option value="	nov	">	ноября	</option>
+						<option value="	dec	">	декабря	</option>
+					</select>
+					<select name="yearOfBirth">
+					</select>
+				</div>
+				<div class="form-item form-item_last">
+					<span class="form-item-caption">Место рождения</span><br>
+					<input type="text" name="placeOfBirth"><br>
+					<em class="form-item-hint">Например, Россия, Комсомольск-на-Амуре</em>
+				</div>
+			</fieldset>
+			<div class="form-buttons">	
+				<input type="button" value="&#8592Назад" class="universalButton form-buttons-prev">
+				<input type="submit" value="Далее&#8594" class="universalButton form-buttons-next">
+			</div>
+		</form>
+	</section>
+</div>
+
+
+</body>
+<html>
